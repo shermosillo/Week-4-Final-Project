@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
     <script src="./index.js" defer></script>
+    <script src="https://kit.fontawesome.com/1e398523bc.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
@@ -28,12 +29,27 @@
     </nav>
     <section id="landing-page"></section>
         <div class="input__row">
-            <input class="input__field" type="text" placeholder="What's Cook'in?">
-            <button class="input__btn">Enter</button>
+            <input class="input__field" type="text" id="ingredient" placeholder="Enter Ingredient...">
+            <button class="input__btn" onclick="getRecipes(event)">Enter</button>
         </div>
       <figure class="bg-img">
         <img src="./assets/food_prramid.jpg" alt="">
-      </figure>  
+      </figure>
+      <div class="recipe-card">
+        <div class="recipe-card__container">
+            <div class="recipe-card__items">
+                <h3>Recipe</h3>
+                <p><b>Calories:</b>0000</p>
+                <p><b>Ingredients:</b></p>
+                <ul>
+                    <li></li>
+                </ul>
+                <figure class="recipe-card__img">
+                    <img src="" alt="">
+                </figure>
+            </div>
+        </div>
+    </div> 
     </section>
     <footer>
         <div class="footer__container">
@@ -41,6 +57,17 @@
                 <img class="footer__img" src="./assets/recipes_img3.png" alt="">
             </figure>
             <h3 class="footer__text">Copyright @ 2024 Sam Hermosillo</h3>
+            <div class="footer__links--wrapper">
+                <a href="https://github.com/shermosillo" target="_blank" class="footer__links">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/sam-hermosillo-759b7135" target="_blank" class="footer__links">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="./assets/Samuel Hermosillo Resume.docx" target="_blank" class="footer__links">
+                    <i class="fa-solid fa-file-pdf"></i>
+                </a>
+            </div>
         </div>
     </footer>
 </body>
