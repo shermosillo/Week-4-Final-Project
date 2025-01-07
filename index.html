@@ -27,29 +27,32 @@
                 </ul>
         </div>
     </nav>
-    <section id="landing-page"></section>
+    <section id="landing-page">
         <div class="input__row">
             <input class="input__field" type="text" onchange="getRecipes(event)" placeholder="Enter Ingredient...">
-            <button class="input__btn" type="submit">Enter</button>
+            <button class="input__btn" type="submit" onclick="toggleModal()">Enter</button>
         </div>
-        <figure class="bg-img">
-            <img src="./assets/food_prramid.jpg" alt="">
-        </figure>
-        <div class="recipe-card">
-            <div class="recipe-card__container">
-                <div class="recipe-card__items">
-                    <h3>Recipe</h3>
-                    <p><b>Calories:</b>0000</p>
-                    <p><b>Ingredients:</b></p>
-                    <ul>
-                        <li></li>
-                    </ul>
-                    <figure class="recipe-card__img--wrapper">
-                        <img class="recipe-card__img" src="" alt="">
-                    </figure>
+        <div class="landing-page__body">
+            <figure class="bg-img">
+                <img class="bg-img__image" src="./assets/food_prramid.jpg" alt="">
+            </figure>
+            <div class="recipe-card__modal">
+                <i class="fa-solid fa-xmark modal__exit" onclick="toggleModal()"></i>
+                <div class="recipe-card__container">
+                    <div class="recipe-card__items">
+                        <h3>Recipe</h3>
+                        <p><b>Calories:</b>0000</p>
+                        <p><b>Ingredients:</b></p>
+                        <ul>
+                            <li></li>
+                        </ul>
+                        <figure class="recipe-card__img--wrapper">
+                            <img class="recipe-card__img" src="" alt="">
+                        </figure>
+                    </div>
                 </div>
             </div>
-        </div>
+        </div>    
     </section>
     <footer>
         <div class="footer__container">
