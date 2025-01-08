@@ -41,3 +41,8 @@ function toggleModal() {
     isModalOpen = true;
     document.body.classList += " modal--open"
 }
+
+function clearInputField() {
+    const inputElement = document.getElementById("myInput");
+    inputElement.value = "";
+}
