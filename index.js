@@ -8,6 +8,7 @@ let isModalOpen = false;
 
 
  async function getRecipes(event) {
+    event.preventDefault();
     const searchRecipe = event.target.value;
     const recipes =  await fetch(`https://api.edamam.com/api/recipes/v2?type=${appType}&app_id=${appId}&app_key=${appKey}&q=${searchRecipe}`)
     const recipesData = await recipes.json();
@@ -45,4 +46,8 @@ function toggleModal() {
 function clearInputField() {
     const inputElement = document.getElementById("myInput");
     inputElement.value = "";
+}
+
+function reloadPage() {
+    location.reload();
 }
